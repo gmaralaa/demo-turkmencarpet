@@ -1,25 +1,25 @@
 /*default*/
 * {
     margin: 0;
-    padding: 10, 10, 10, 10;
+    padding: 0;
     box-sizing: border-box;
     width: 100%;
 }
-
 
 /*header*/
 header {
     background-color: #ffffff;
     box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 0.2);
     height: 90px;
-
 }
 
 .main-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
     align-items: center;
-    padding: 10px 15px 20px 25px;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .formedia {
@@ -48,7 +48,8 @@ header {
     height: 22px;
     top: 30.18px;
     left: 601.4px;
-
+    text-align: center;
+    gap: 20px;
 }
 
 .unlist li {
@@ -166,6 +167,12 @@ header {
 .image-1 {
     width: 65%;
     float: right;
+}
+
+.image-1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -225,6 +232,13 @@ header {
 #image2 {
     width: 70%;
     float: left;
+}
+
+#image2 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*Frame-2*/
@@ -291,6 +305,14 @@ header {
     flex-direction: column;
     margin-top: 5px;
     margin-bottom: 30px;
+}
+
+.moreProducts {
+    height: 30px;
+    width: 130px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
 }
 
 .text h3 {
@@ -825,403 +847,22 @@ footer {
 /*Products*/
 
 
-/*for the max-width 480px*/
-@media (max-width: 480px) {
 
-    /*media query for the header*/
+@media (max-width: 1024px) {
+
     .main-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .navss button {
-        float: right;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background: none;
-        border: none;
-        cursor: pointer;
-        width: 30px;
-        height: 20px;
-    }
-
-    .navss button span {
-        width: 100%;
-        height: 2px;
-        background-color: #000000;
-        border-radius: 1px;
-    }
-
-    .unlist {
-        display: none;
-    }
-
-    #login-btn {
-        display: none;
-    }
-
-    /*media query for the header*/
-
-    /*media query for the part-1*/
-    #part1 {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0;
-    }
-
-    .section-1 h1 {
-        color: #89171F;
-        font-size: 52px;
-    }
-
-    .section-1 p {
-        font-size: 12px;
-    }
-
-    .section-2 {
-        display: flex;
-        flex-direction: column;
         gap: 20px;
-        width: 100%;
     }
 
-    .content {
-        width: 100%;
-        padding: 20px;
-    }
-
-    #frame-inside h3 {
-        font-size: 25px;
-    }
-
-    #frame-inside p {
-        font-size: 16px;
-    }
-
-    .image-1 {
-        width: 100%;
-        height: 545px;
-
-    }
-
-    /*media query for the part-1*/
-
-    /*media query for the part-2*/
-
-    #section-2 h2 {
-        font-size: 50px;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    #m1 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #image2 {
-        width: 100%;
-    }
-
-    #dspl {
-        width: 100%;
-        gap: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 30px;
-        padding-bottom: 60px;
-    }
-
-    #dspl h3 {
-        font-size: 25px;
-    }
-
-    #dspl p {
-        font-size: 16px;
-    }
-
-    /*media query for the part-2*/
-
-    /*media query for the part-3*/
-    .section-3 {
-        padding: 20px;
-    }
-
-    .section-3 h2 {
-        font-size: 45px;
-    }
-
-    .section-3 p {
+    .unlist li {
         font-size: 18px;
     }
 
-    .push {
-        padding: 10px 0;
+    #login-btn {
+        width: 130px;
     }
 
-    /*media query for the part-3*/
-
-    /*media query for the part-4*/
-    .section-4 {
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-    }
-
-    .phonesize {
-        background-color: #FFFFFF;
-        color: #89171F;
-        border: none;
-        text-align: center;
-        height: 50.3px;
-        width: 150px;
-        font: 600, bold, 30px;
-        letter-spacing: -2%;
-    }
-
-    .text {
-        width: 100%;
-    }
-
-    .text h3 {
-        font-size: 25px;
-    }
-
-    .m2 {
-        width: 100%;
-    }
-
-    .imgg {
-        height: 320px;
-    }
-
-    .p0 {
-        font-size: 12px;
-    }
-
-    .price {
-        font-size: 11px;
-    }
-
-    .dets {
-        font-size: 12px;
-    }
-
-    .dets .p1 {
-        padding-top: 10px;
-        font-size: 11px;
-    }
-
-    /*media query for the part-4*/
-
-    /*media query for the part-5*/
-    .position {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .img3 {
-        width: 100%;
-    }
-
-    .container {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
-    .container h2 {
-        font-size: 40px;
-    }
-
-    .container button {
-        margin-bottom: 40px;
-    }
-
-    /*media query for the part-5*/
-
-    /*media query for the part-6*/
-    .section-6 {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .section-6 h2 {
-        font-size: 40px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .sec6 {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .sec6 button {
-        justify-content: center;
-        margin-left: 150px;
-    }
-
-    /*part-6*/
-    /*part-7*/
-    .image-row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .image-row img {
-        width: 20%;
-    }
-
-    /*part-7*/
-    /*footer*/
-
-    /*footer*/
-    footer {
-        height: auto;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 30px;
-        padding-bottom: 80px;
-    }
-
-    .parts h4 {
-        font-size: 16px;
-    }
-
-    .contact {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contact .bio p {
-        font-size: 12px;
-    }
-
-    .bio {
-        gap: 10px;
-    }
-
-    .bio h4 {
-        font-size: 16px;
-    }
-
-    .bio p {
-        font-size: 14px;
-    }
-
-    /*media query for the part-6*/
-
-    /*media quary for the contact-us page*/
-    .con-sec-1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .con-info {
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .con-info h2 {
-        font-size: 50px;
-    }
-
-    .con-sec-1 img {
-        padding: 20px;
-        width: 100%;
-    }
-
-    .con-sec-2 {
-        padding: 20px;
-        gap: 30px;
-    }
-
-    .con-sec-2 h2 {
-        font-size: 32px;
-    }
-
-    .res-p {
-        gap: 8px;
-    }
-
-    .res-p h5 {
-        font-size: 16px;
-    }
-
-    /*media quary for the contact-us page*/
-
-    /*media quary for the blog page*/
-    .blog-h1 {
-        font-size: 35px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
-
-    .blog-sec {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .blog-sec img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .blog-content {
-        order: 2;
-        width: 100%;
-        gap: 15px;
-    }
-
-    /*media quary for the blog page*/
-
-    /*media quary for the products page*/
-    .prod-sec h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-size: 26px;
-        font-weight: 500;
-    }
-
-    /*media quary for the products page*/
-}
-
-/*for the max-width 480px*/
-
-/*for the max-width 1024px*/
-@media (max-width: 1024px) {
-
-    /*header*/
-    .formedia {
-        display: none;
-    }
-
-    /*header*/
-
-    /*part1*/
-    .title-1 {
+    .section-1 h1 {
         font-size: 90px;
     }
 
@@ -1260,18 +901,12 @@ footer {
         display: block;
     }
 
-    /*part1*/
-
-    /*part-2*/
     #section-2 h2 {
         font-size: 50px;
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
-    /*part-2*/
-
-    /*part-3*/
     .section-3 h2 {
         font-size: 50px;
         margin-top: 10px;
@@ -1282,9 +917,6 @@ footer {
         font-size: 30px;
     }
 
-    /*part-3*/
-
-    /*part-4*/
     .section-4 {
         padding-top: 60px;
         padding-bottom: 70px;
@@ -1300,9 +932,6 @@ footer {
         font-size: 14px;
     }
 
-    /*part-4*/
-
-    /*part-5*/
     .position {
         padding-top: 50px;
         padding-left: 20px;
@@ -1323,9 +952,6 @@ footer {
         font-size: 17px;
     }
 
-    /*part-5*/
-
-    /*part-6*/
     .section-6 {
         padding-top: 40px;
         padding-left: 20px;
@@ -1337,9 +963,10 @@ footer {
         font-size: 42px;
     }
 
-    /*part-6*/
+    footer {
+        padding: 60px 40px;
+    }
 
-    /*contact-us page*/
     .con-info {
         padding-top: 50px;
         padding-left: 40px;
@@ -1355,24 +982,568 @@ footer {
         font-size: 48px;
     }
 
-    /*contact-us page*/
-
-    /*blog page*/
     .blog-sec {
         gap: 20px;
     }
 
-    /*blog page*/
+    .blog-p {
+        padding-right: 40px;
+    }
 
-    /*products page*/
     .prod-img {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
         width: 100%;
     }
-
-    /*products page*/
 }
 
-/*for the max-width 1024px*/
+@media (max-width: 768px) {
+
+    .main-header {
+        position: relative;
+        gap: 20px;
+    }
+
+    #logo {
+        margin-right: auto;
+    }
+
+    nav {
+        width: auto;
+        order: 3;
+    }
+
+    #login-btn {
+        order: 2;
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .formedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .formedia span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+        border-radius: 1px;
+    }
+
+    .unlist {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: #ffffff;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    .unlist.open {
+        display: flex;
+    }
+
+    .unlist li {
+        font-size: 20px;
+        text-align: left;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .unlist li a {
+        display: block;
+        padding: 16px 20px;
+    }
+
+    .section-1 h1 {
+        font-size: 64px;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .image-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-1 img {
+        height: auto;
+    }
+
+    #section-2 h2 {
+        font-size: 44px;
+    }
+
+    #m1 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #image2,
+    #dspl {
+        width: 100%;
+    }
+
+    #dspl {
+        padding: 30px 30px 40px 30px;
+    }
+
+    .section-3 {
+        padding: 0 20px;
+    }
+
+    .section-3 h2 {
+        font-size: 40px;
+    }
+
+    .push p {
+        font-size: 24px;
+    }
+
+    .section-3 img {
+        flex-shrink: 0;
+    }
+
+    .section-4 {
+        flex-direction: column;
+        padding: 50px 40px;
+    }
+
+    .text,
+    .m2 {
+        width: 100%;
+    }
+
+    .m2 {
+        gap: 20px;
+    }
+
+    .imgg {
+        height: 380px;
+    }
+
+    .position {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img3,
+    .container {
+        width: 100%;
+        float: none;
+    }
+
+    .container h2 {
+        font-size: 36px;
+    }
+
+    .container button {
+        margin-bottom: 40px;
+    }
+
+    .section-6 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-6 h2,
+    .sec6 {
+        width: 100%;
+    }
+
+    .section-6 h2 {
+        font-size: 40px;
+    }
+
+    .image-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .image-row img {
+        width: 15%;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    footer {
+        height: auto;
+        padding: 50px 40px;
+    }
+
+    footer>.parts {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px 60px;
+    }
+
+    .contact .bio {
+        width: auto;
+    }
+
+    .con-sec-1 {
+        flex-direction: column;
+    }
+
+    .con-info {
+        padding: 40px 30px 0 30px;
+    }
+
+    .con-info h2 {
+        font-size: 56px;
+    }
+
+    .con-sec-1 img {
+        padding: 30px;
+    }
+
+    .con-sec-2 {
+        padding: 30px 30px 60px 30px;
+    }
+
+    .con-sec-2 h2 {
+        font-size: 40px;
+    }
+
+    .blog-h1 {
+        font-size: 40px;
+    }
+
+    .blog-sec {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .blog-p {
+        padding-right: 0;
+        font-size: 16px;
+    }
+
+    .prod-sec h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .main-header {
+        padding: 0 15px;
+    }
+
+    #logo {
+        font-size: 22px;
+    }
+
+    #login-btn {
+        display: none;
+    }
+
+    #part1 {
+        padding-bottom: 0;
+    }
+
+    .section-1 h1 {
+        color: #89171F;
+        font-size: 52px;
+    }
+
+    .section-1 p {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    #frame-inside h3 {
+        font-size: 25px;
+    }
+
+    #frame-inside p {
+        font-size: 16px;
+    }
+
+    .image-1 {
+        height: 545px;
+    }
+
+    .image-1 img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #section-2 h2 {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #dspl {
+        gap: 10px;
+        padding: 30px 30px 60px 30px;
+    }
+
+    #dspl h3 {
+        font-size: 25px;
+    }
+
+    #dspl p {
+        font-size: 16px;
+    }
+
+    .section-3 {
+        padding: 20px;
+    }
+
+    .section-3 h2 {
+        font-size: 40px;
+    }
+
+    .push {
+        padding: 10px 0;
+        gap: 15px;
+    }
+
+    .push p {
+        font-size: 18px;
+    }
+
+    .section-4 {
+        padding: 40px 20px;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .m2 {
+        gap: 15px;
+    }
+
+    .imgg {
+        height: 320px;
+    }
+
+    .sign {
+        height: 40px;
+        width: 40px;
+        right: -12px;
+    }
+
+    .p0 {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .dets {
+        font-size: 12px;
+    }
+
+    .dets .p1 {
+        padding-top: 10px;
+        font-size: 11px;
+    }
+
+    .position {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .container {
+        text-align: center;
+        margin: 0;
+    }
+
+    .container h2 {
+        font-size: 36px;
+    }
+
+    .container button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .par4 {
+        font-size: 16px;
+    }
+
+    .section-6 {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .section-6 h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .sec6 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec6 button {
+        margin-left: 0;
+    }
+
+    .section-7 {
+        padding: 30px 20px;
+    }
+
+    .section-7 h3 {
+        font-size: 20px;
+    }
+
+    .image-row {
+        gap: 15px;
+    }
+
+    .image-row img {
+        width: 20%;
+        height: 50px;
+    }
+
+    footer {
+        padding: 30px 20px 40px 20px;
+    }
+
+    footer>.parts {
+        gap: 30px;
+    }
+
+    .parts .parts {
+        gap: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bio {
+        gap: 10px;
+    }
+
+    .bio h4,
+    .parts h4 {
+        font-size: 16px;
+    }
+
+    .bio p {
+        font-size: 14px;
+    }
+
+    .contact .bio p {
+        font-size: 12px;
+    }
+
+    .con-info {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .con-info h2 {
+        font-size: 50px;
+    }
+
+    .con-sec-1 img {
+        padding: 20px;
+    }
+
+    .con-sec-2 {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .con-sec-2 h2 {
+        font-size: 32px;
+    }
+
+    .con-res {
+        gap: 20px 15px;
+    }
+
+    .res-p {
+        gap: 8px;
+    }
+
+    .res-p h5 {
+        font-size: 16px;
+    }
+
+    .blog-h1 {
+        font-size: 35px;
+        padding: 20px;
+    }
+
+    .blog-sec {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .blog-sec img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .blog-content {
+        order: 2;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .blog-p {
+        padding-right: 0;
+    }
+
+    .prod-sec {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .prod-sec h1 {
+        padding: 10px 20px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .prod-img {
+        grid-template-columns: 1fr;
+    }
+}
